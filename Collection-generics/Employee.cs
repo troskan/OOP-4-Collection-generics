@@ -4,12 +4,11 @@ using System.Text;
 
 namespace Collection_generics
 {
-    class Employee
+    public class Employee
     {
         //ID, Name, Gender, Salary
         public string Name {get; set;}
         public int Id {get; set;}
-
         public string Gender {get; set;}
         public decimal Salary {get; set;}
         public Employee(string name, int id, string gender, decimal salary)
@@ -20,9 +19,5 @@ namespace Collection_generics
             this.Salary = salary;
         }
 
-        Stack<string> personInfo = new Stack<string>
-        {
-
-        };
     }
 }
