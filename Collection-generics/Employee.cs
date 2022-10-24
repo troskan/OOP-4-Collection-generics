@@ -18,6 +18,10 @@ namespace Collection_generics
             this.Gender = gender;
             this.Salary = salary;
         }
+        public override string ToString()
+        {
+            return ($"{Name} - {Id} - {Gender} - {Salary}");
+        }
 
     }
 }
