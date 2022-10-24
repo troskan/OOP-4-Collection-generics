@@ -25,7 +25,6 @@ namespace Collection_generics
             //Print all objects in Stack
             foreach (Employee person in persons)
             {
-                //Console.Write($"{item.Name} - {item.Id} - {item.Gender} - {item.Salary}");
                 Console.WriteLine(person);
                 Console.WriteLine($"Items left in the stack: {persons.Count}");
             }
@@ -73,12 +72,13 @@ namespace Collection_generics
             //Does kim exist in the list?
             result = listPerson.Contains(kim) ? $"{kim.Name} is found." : "Item not found.";
             Console.WriteLine(result);
-
             Console.WriteLine("----------------------------");
+
             //Does a male exist?
             Employee maleResult = listPerson.Find(x => x.Gender.Contains("Man"));
             Console.WriteLine(maleResult);
             Console.WriteLine("----------------------------");
+
             //How many males exist?
             List<Employee> searchResult = new List<Employee>();
             searchResult = listPerson.FindAll(y => y.Gender.Contains("Man"));
@@ -86,6 +86,9 @@ namespace Collection_generics
             {
                 Console.WriteLine(item);
             }
+
+            Console.WriteLine("\tGood Bye!");
+            Console.ReadKey();
         }
     }
 }
