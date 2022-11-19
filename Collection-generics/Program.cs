@@ -75,8 +75,8 @@ namespace Collection_generics
             Console.WriteLine("----------------------------");
 
             //Does a male exist?
-            Employee maleResult = listPerson.Find(x => x.Gender.Contains("Man"));
-            Console.WriteLine(maleResult);
+            Employee maleExists = listPerson.Find(x => x.Gender.Contains("Man"));
+            Console.WriteLine(maleExists);
             Console.WriteLine("----------------------------");
 
             //How many males exist?
